@@ -18,13 +18,19 @@ export const ColumnsVal = [
         header: 'Id',
     },
     {
-        accessorKey: 'first_name',
-        header: 'First Name',
+        header:'Name',
+        accessorFn: row=>`${row.first_name}${row.last_name}`
+
     },
-    {
-        accessorKey: 'last_name',
-        header: 'Last Name',
-    },
+
+    // {
+    //     accessorKey: 'first_name',
+    //     header: 'First Name',
+    // },
+    // {
+    //     accessorKey: 'last_name',
+    //     header: 'Last Name',
+    // },
     {
         accessorKey: 'email',
         header: 'Email',
